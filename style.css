@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#ffffff;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #000000, rgba(255,0,0,0)), url('main-house.png');
+    background-size: cover;
+    
+
+}
+.header{
+    margin-right: 10%;
+}
+.header .nav{
+    display: flex;
+    justify-content:space-between;
+    background-color:#fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 2px;
+    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
+}
+.header .nav .company{
+    margin:10px ;
+    font-size: 30px;
+}
+/* .both{
+    justify-content: space-between;
+} */
+.header .nav .menu a {
+    text-decoration: none;
+    text-align: center;
+    padding:10px;
+    width: 60px;
+    color: #000;
+    font-weight: 600;
+    margin: 20px;
+    text-transform: uppercase;
+   
+}
+.header .nav .menu a:hover {
+    text-decoration: underline;
+    color:  rgb(219, 33, 33);
+    justify-content: center;
+    margin: 20px;
+   
+}
+.header .nav .menu li{
+    list-style: none;
+    float: right;
+    justify-content: center;
+    text-align: center;
+    padding-right: 10px;
+}
+.menu ul{
+    display: flex;
+    float: right;
+    justify-content: space-between;
+}
+.content{
+    padding-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 40px;
+
+}
+.content h1{
+    margin-bottom: 50px;
+    font-size: 50px;
+    margin-top: 10%;
+    color: orange;
+}
+.content p{
+    font-size: 30px;
+    color: #000;
+}
+.logo img{
+height: 50px;
+margin-top: 10px;
+margin-right: 0px;
+}
+.content .intro .btn, .services .service .btn{
+    padding: 10px;
+    margin-top: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 50px;
+    font-weight: 400;
+    width: 150px;
+    font-size: 20px;
+    transition: 0.2s;
+    border-radius: 25px;
+}
+.content .intro .btn1{
+    background-color: rgb(249, 119, 5);
+    color: #fff;
+}
+.content .intro .btn2:hover{
+    background-color: rgb(249, 119, 5);
+    color: #fff;
+}
+.content .intro p{
+    color: #fff;
+}
+.menu2 a {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    width: 60px;
+    height: 10px;
+    color: #fff;
+    padding: 20px 10px;
+    margin: 10px;
+    border-radius:5px;
+}
+.menu2 a:hover {
+    text-decoration: none;
+    color: rgb(219, 33, 33);
+    padding: 20px 10px;
+    background-color: #000;
+    margin: 10px;
+}
+.menu2 li{
+    list-style: none;
+}
+.menu2 ul{
+    display: none;
+    justify-content: space-around;
+}
+@media screen and  (max-width: 786px){
+    .menu{
+        display: none;
+    }
+    .menu2 ul{
+        display: flex;
+    }
+    .nav .logo h2{
+        float: left;
+    }
+    .nav{
+        justify-content: space-between;
+    }
+    .about .hide, .about img{
+        display: none;
+    }
+
+}
+.services .parent, .reviews .parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.services h1, .about h1, .contact h1{
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    margin: 50px;
+}
+.services .service h2{
+    margin: 20px;
+    font-size: 30px;
+}
+.services .parent .service img{
+    height: 150px;
+    width: auto;
+}
+.services .parent .service, .about .parent, .reviews .review {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    height: 400px;
+    text-align: center;
+    width: 300px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 20px;
+    padding: 50px;
+}
+.services .parent .service:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.services .service p, .about p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.services .service .serbtn{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgb(11, 133, 221);
+    transition: 0.5s;
+}
+.services .service .serbtn:hover{
+    background-color: rgb(32, 201, 51);
+}
+.about{
+    height: 100vh;
+    justify-content: center;
+}
+.about .parent{
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    height: 400px;
+    text-align: center;
+    max-width: 1000px;
+    width: 80%;
+    min-width: 300px;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin: 0px;
+    padding: 50px;
+}
+.reviews h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px;
+    margin: 50px;
+}
+.review img{
+    border-radius: 50%;
+    height: 250px;
+    top: 0%;
+}
+.review p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.footer footer {
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.footer p{
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
+}
+
+
